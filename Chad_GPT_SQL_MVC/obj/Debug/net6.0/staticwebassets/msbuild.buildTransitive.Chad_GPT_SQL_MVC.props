@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Chad_GPT_SQL_MVC.props" />
+</Project>

@@ -1,0 +1,34 @@
+﻿
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Http;
+@{
+    var cookieContext = new HttpContextAccessor().HttpContext;
+    var cookie = cookieContext.Request.Cookies["loginCookie"];
+}
+
+
+
+    @if(cookie != null)
+    {
+    
+    
+    <h1>Welcome @cookie</h1>
+    <a class="btn btn alert-danger" asp-controller="User" asp-action="Logout">Logout</a>
+    }
+    else
+    {
+        
+        <a asp-controller="User" asp-action="Login">Login</a>
+        <button asp-controller="User" asp-action="Register">Register</button>
+    }
+
+
+@section Scripts{
+    <script>
+        //const isUser = document.getElementById("isUser");
+        //if(!isUser) {
+        //    fetch("")
+        //}
+
+    </script>
+}

@@ -1,0 +1,12 @@
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\bin\Debug\net6.0\Chad_GPT_Data_Access.deps.json
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\bin\Debug\net6.0\Chad_GPT_Data_Access.dll
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\bin\Debug\net6.0\Chad_GPT_Data_Access.pdb
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.csproj.AssemblyReference.cache
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.AssemblyInfoInputs.cache
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.AssemblyInfo.cs
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.csproj.CoreCompileInputs.cache
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.dll
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\refint\Chad_GPT_Data_Access.dll
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\Chad_GPT_Data_Access.pdb
+C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_Data_Access\obj\Debug\net6.0\ref\Chad_GPT_Data_Access.dll

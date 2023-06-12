@@ -1,0 +1,21 @@
+﻿@model User
+@{
+    <div class="col" >
+    
+                    <h1>Welcome @Model.UserName</h1>
+                    <div class="row" >
+                        <p>ID: @Model.Id</p>
+                    <p>Username: @Model.UserName</p>
+                        <p>Password: @Model.Password</p>
+                    </div>
+                    <div class="btn-group" >
+                        <a 
+                        asp-controller="User"
+                        asp-action="Index"
+                        class="btn btn-success">
+                            Back to index...
+                        </a>
+                    </div>
+    </div>
+    
+}

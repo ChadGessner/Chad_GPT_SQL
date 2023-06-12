@@ -1,0 +1,24 @@
+﻿@model IEnumerable<UserViewModel>
+
+
+    <div>Welcome</div>
+    @foreach (var user in Model)
+    {
+        <div class="row">
+            <h1>@user.UserName</h1>
+            
+        </div>
+    }
+
+    <div class="btn-group">
+        <a asp-action="Login"
+       class="btn btn-secondary m-1">
+            Login
+        </a>
+        <a asp-action="Register"
+       class="btn btn-success m-1">Register</a>
+    </div>
+
+
+    
+

@@ -1,0 +1,42 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Answer] (Table)
+       [dbo].[Category] (Table)
+       [dbo].[Image] (Table)
+       [dbo].[Type] (Table)
+       [dbo].[User] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Answer] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Answer] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Category] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Image] (Foreign Key)
+       [dbo].[DeleteAnswer] (Procedure)
+       [dbo].[DeleteImage] (Procedure)
+       [dbo].[DeleteUser] (Procedure)
+       [dbo].[GetAnswer] (Procedure)
+       [dbo].[GetAnswerByCategory] (Procedure)
+       [dbo].[GetAnswers] (Procedure)
+       [dbo].[GetImage] (Procedure)
+       [dbo].[GetImageByCategory] (Procedure)
+       [dbo].[GetImages] (Procedure)
+       [dbo].[GetUser] (Procedure)
+       [dbo].[GetUsers] (Procedure)
+       [dbo].[InsertAnswer] (Procedure)
+       [dbo].[InsertCategory] (Procedure)
+       [dbo].[InsertImage] (Procedure)
+       [dbo].[InsertUser] (Procedure)
+       [dbo].[UpdateUser] (Procedure)
+
+** Supporting actions
+
+The compatibility level of the target schema 160 is not supported, which may result in undefined behavior. Please upgrade to a later version which supports this compatibility level.
+

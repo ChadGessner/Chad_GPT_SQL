@@ -1,0 +1,14 @@
+﻿@model IEnumerable<QuestionAnswer>
+
+
+    <div class="bg-body">
+    @foreach(var answer in Model)
+    {
+        <div>
+            <h2>@answer.Prompt</h2>
+        </div>
+    }
+    <div class="btn-group m-4">
+        <a asp-action="AddAnswer" class="btn btn-success">Add Prompt</a>
+    </div>
+</div>

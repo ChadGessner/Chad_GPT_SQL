@@ -1,0 +1,61 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[User].[FirstName] is being dropped, data loss could occur.
+       The column [dbo].[User].[LastName] is being dropped, data loss could occur.
+       The column [dbo].[User].[Password] on table [dbo].[User] must be added, but the column has no default value and does not
+         allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add
+         a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+       The column [dbo].[User].[UserName] on table [dbo].[User] must be added, but the column has no default value and does not
+         allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add
+         a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a
+         deployment option.
+
+** User actions
+     Alter
+       [dbo].[User] (Table)
+     Create
+       [dbo].[Answer] (Table)
+       [dbo].[Category] (Table)
+       [dbo].[Image] (Table)
+       [dbo].[Type] (Table)
+       Foreign Key: unnamed constraint on [dbo].[Answer] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Answer] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Category] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Image] (Foreign Key)
+       [dbo].[DeleteAnswer] (Procedure)
+       [dbo].[DeleteImage] (Procedure)
+       [dbo].[DeleteUser] (Procedure)
+       [dbo].[GetAnswer] (Procedure)
+       [dbo].[GetAnswerByCategory] (Procedure)
+       [dbo].[GetAnswers] (Procedure)
+       [dbo].[GetImage] (Procedure)
+       [dbo].[GetImageByCategory] (Procedure)
+       [dbo].[GetImages] (Procedure)
+       [dbo].[GetUser] (Procedure)
+       [dbo].[GetUsers] (Procedure)
+       [dbo].[InsertAnswer] (Procedure)
+       [dbo].[InsertCategory] (Procedure)
+       [dbo].[InsertImage] (Procedure)
+       [dbo].[InsertUser] (Procedure)
+       [dbo].[UpdateUser] (Procedure)
+
+** Supporting actions
+
+The compatibility level of the target schema 160 is not supported, which may result in undefined behavior. Please upgrade to a later version which supports this compatibility level.
+The column [dbo].[User].[FirstName] is being dropped, data loss could occur.
+The column [dbo].[User].[LastName] is being dropped, data loss could occur.
+The column [dbo].[User].[Password] on table [dbo].[User] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[User].[UserName] on table [dbo].[User] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+If this deployment is executed, changes to [dbo].[User] might introduce run-time errors in [dbo].[spUser_Delete].
+If this deployment is executed, changes to [dbo].[User] might introduce run-time errors in [dbo].[spUser_Get].
+If this deployment is executed, changes to [dbo].[User] might introduce run-time errors in [dbo].[spUser_GetAll].
+If this deployment is executed, changes to [dbo].[User] might introduce run-time errors in [dbo].[spUser_Insert].
+If this deployment is executed, changes to [dbo].[User] might introduce run-time errors in [dbo].[spUser_Update].
+

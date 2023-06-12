@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Image]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Prompt] NVARCHAR(MAX),
+	[URL] NVARCHAR(MAX),
+	[CategoryId] INT FOREIGN KEY REFERENCES [dbo].[Category],
+
+)

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Category]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[CategoryName] NVARCHAR(100) NOT NULL,
+	[Type] INT FOREIGN KEY REFERENCES [dbo].[Type]
+)

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Chad_GPT_SQL</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{219e8db4-e9eb-4e69-90bb-ed37b53a5eae}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Chad_GPT_SQL</RootNamespace>
+    <AssemblyName>Chad_GPT_SQL</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="DBO" />
+    <Folder Include="DBO\StoredProcedures" />
+    <Folder Include="DBO\StoredProcedures\User" />
+    <Folder Include="DBO\StoredProcedures\Category" />
+    <Folder Include="DBO\StoredProcedures\Answer" />
+    <Folder Include="DBO\StoredProcedures\Image" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="DBO\Answer.sql" />
+    <Build Include="DBO\Category.sql" />
+    <Build Include="DBO\Type.sql" />
+    <Build Include="DBO\User.sql" />
+    <Build Include="DBO\Image.sql" />
+    <Build Include="DBO\StoredProcedures\User\InsertUser.sql" />
+    <Build Include="DBO\StoredProcedures\User\UpdateUser.sql" />
+    <Build Include="DBO\StoredProcedures\User\DeleteUser.sql" />
+    <Build Include="DBO\StoredProcedures\Category\InsertCategory.sql" />
+    <Build Include="DBO\StoredProcedures\User\GetUsers.sql" />
+    <Build Include="DBO\StoredProcedures\User\GetUser.sql" />
+    <Build Include="DBO\StoredProcedures\Answer\InsertAnswer.sql" />
+    <Build Include="DBO\StoredProcedures\Answer\GetAnswers.sql" />
+    <Build Include="DBO\StoredProcedures\Answer\GetAnswer.sql" />
+    <Build Include="DBO\StoredProcedures\Answer\GetAnswerByCategory.sql" />
+    <Build Include="DBO\StoredProcedures\Answer\DeleteAnswer.sql" />
+    <Build Include="DBO\StoredProcedures\Image\InsertImage.sql" />
+    <Build Include="DBO\StoredProcedures\Image\GetImages.sql" />
+    <Build Include="DBO\StoredProcedures\Image\GetImage.sql" />
+    <Build Include="DBO\StoredProcedures\Image\GetImageByCategory.sql" />
+    <Build Include="DBO\StoredProcedures\Image\DeleteImage.sql" />
+    <Build Include="DBO\StoredProcedures\Category\GetCategories.sql" />
+    <Build Include="DBO\StoredProcedures\Category\GetCategory.sql" />
+    <Build Include="DBO\StoredProcedures\User\GetUserByUsernameAndPassword.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
+  </ItemGroup>
+</Project>

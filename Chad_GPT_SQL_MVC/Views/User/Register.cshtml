@@ -1,0 +1,42 @@
+﻿@model User
+@{
+
+    <form method="post">
+    
+        <div class="row">
+            <label>Username</label>
+            <input 
+            name="userName"
+            type="text" 
+            class="form-control" 
+            asp-for="@Model.UserName"/>
+        </div>
+        <div class="row">
+            <label>Password</label>
+            <input 
+                name="password"
+               type="text"
+               class="form-control"
+               asp-for="@Model.Password" />
+        </div>
+        <div class="btn-group">
+            <button
+            class="btn btn-success"
+            type="submit"
+            asp-action="Register"
+            asp-route-userName="@Model.UserName"
+            asp-route-password="@Model.Password"
+            >Register</button>
+        </div>
+    </form>
+}
+@section Scripts {
+    <script>
+        const bunton = document.getElementById('bunton');
+        bunton.addEventListener('click', () => {
+            console.log(document.getElementById('password').value)
+        })
+
+
+    </script>
+}

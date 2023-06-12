@@ -1,0 +1,68 @@
+﻿@model User
+@{
+    if(Model.Id == 0)
+    {
+        <form  method="post" >
+            <div class="col">
+                <label>Enter Username</label>
+                <input
+                id="username"
+                type="text"
+                name="userName"
+                asp-for="@Model.UserName"
+                >
+            </div>
+            <div class="col">
+                <label>Enter Password</label>
+                <input 
+                id="password"
+                type="text"
+                name="password"
+                asp-for="@Model.Password">
+            </div>
+            <div class="btn-group">
+                <button 
+                id="bunton"
+                asp-action="Login"
+                asp-route-userName="@Model.UserName"
+                asp-route-password="@Model.Password"
+                type="submit"
+                class="btn btn-success">Login</button>
+                <a class="btn btn-secondary">Register</a>
+            </div>
+        </form>
+        }
+        else
+        {
+            
+        }
+
+}
+@section Scripts {
+    <script>
+        const bunton = document.getElementById('bunton');
+        bunton.addEventListener('click',()=>{
+            console.log(document.getElementById('password').value)
+        })
+        //bunton.addEventListener('click',(e)=>{
+            
+        //    const userNameInput = document.getElementById('username');
+        //    const passwordInput = document.getElementById('password');
+        //    console.log(userNameInput)
+        //    console.log(passwordInput)
+        //    const userName = userNameInput.value;
+        //    const password = passwordInput.value;
+        //    const uri = `https://localhost:7212/User/GetUser?userName=${userName}&password=${password}`;
+        //    fetch(uri)
+        //        .then(response=>{
+        //            return response.json();
+        //        }).then(json=>{
+        //            [...json].forEach((x)=>{
+        //                console.log(x);
+        //            })
+        //            alert(`User with id: ${json.id} and userName: ${json.userName} has logged in successfully`)
+        //        })
+        //})
+
+    </script>
+}

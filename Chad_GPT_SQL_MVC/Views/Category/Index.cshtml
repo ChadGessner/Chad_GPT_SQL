@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Category>    
+    
+    
+
+<div class="active">
+    <div class="alert-heading">
+        <h1>Categories</h1>
+    </div>
+    <table class="table border border-danger row p-4">
+        <tr class="table row">
+            <td class="col">
+                Name
+            </td>
+            <td class="col">
+                Type
+            </td>
+            <td class="col">
+                Id
+            </td>
+            <td class="col m-">
+                Actions
+            </td>
+        </tr>
+
+
+        @foreach (var category in Model)
+        {
+
+
+            <tr class="table row">
+                <td class="col">@category.CategoryName</td>
+                <td class="col">
+                    @(category.Type == 1 ? "Images" : "Questions")
+                </td>
+                <td class="col">
+                    @category.Id
+                </td>
+                <td class="btn-group col">
+                    <a asp-action="AddCategory"
+                        class="btn btn-primary">
+                        Add Item
+                    </a>
+                    <a class="btn btn-success">
+                        Update Item
+                    </a>
+                    <a class="btn btn-danger">
+                        Delete Item
+                    </a>
+                </td>
+            </tr>
+
+
+        }
+    </table>
+</div>
+

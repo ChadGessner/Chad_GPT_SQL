@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Type]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[TypeName] NVARCHAR(10) NOT NULL
+)

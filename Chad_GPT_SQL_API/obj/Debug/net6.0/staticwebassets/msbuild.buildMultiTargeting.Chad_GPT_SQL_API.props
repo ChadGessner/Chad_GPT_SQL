@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Chad_GPT_SQL_API.props" />
+</Project>

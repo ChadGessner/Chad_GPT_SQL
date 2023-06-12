@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Answer]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Prompt] NVARCHAR(MAX) NOT NULL,
+	[Answer] NVARCHAR(MAX) NOT NULL,
+	[CategoryId] INT FOREIGN KEY REFERENCES [dbo].[Category],
+	[CreatedBy] INT FOREIGN KEY REFERENCES [dbo].[User],
+	[CreatedOn] DATE
+)
