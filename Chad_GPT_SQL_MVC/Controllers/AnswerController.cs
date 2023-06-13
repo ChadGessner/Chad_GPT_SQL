@@ -17,7 +17,13 @@ namespace Chad_GPT_SQL_MVC.Controllers
         }
         public IActionResult AddAnswer()
         {
-            return View(new QuestionAnswer());
+            return View();
         }
+        [HttpPost]
+        public IActionResult AddAnswer(QuestionAnswer promptData)
+        {
+            return RedirectToAction(nameof(Index));
+        }
+        
     }
 }

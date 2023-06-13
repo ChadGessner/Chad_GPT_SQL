@@ -14,6 +14,7 @@ namespace Chad_GPT_SQL_API
             app.MapGet("/Answers/{id}", GetAnswer);
             app.MapGet("/Category", GetCategories);
             app.MapPost("/Users", AddUser);
+            app.MapPost("/Answers", AddAnswer);
             app.MapDelete("/Users", DeleteUser);
         }
         private static async Task<IResult> GetCategories(ICategoryData data)
@@ -25,6 +26,18 @@ namespace Chad_GPT_SQL_API
             catch (Exception ex)
             {
 
+                return Results.Problem(ex.Message);
+            }
+        }
+        private static async Task<IResult> AddAnswer(QuestionAnswer answer, IAnswerData data)
+        {
+            try
+            {
+                await data.InsertAnswer(answer);
+                return Results.Ok();
+            }
+            catch (Exception ex)
+            {
                 return Results.Problem(ex.Message);
             }
         }

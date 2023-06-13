@@ -684,23 +684,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CGess\\.nuget\\packages\\": {},
+    "C:\\Users\\Chad\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CGess\\source\\repos\\Chad_GPT_SQL\\Chad_GPT_Data_Access\\Chad_GPT_Data_Access.csproj",
+      "projectUniqueName": "C:\\Users\\Chad\\source\\repos\\Chad_GPT_SQL\\Chad_GPT_SQL\\Chad_GPT_Data_Access\\Chad_GPT_Data_Access.csproj",
       "projectName": "Chad_GPT_Data_Access",
-      "projectPath": "C:\\Users\\CGess\\source\\repos\\Chad_GPT_SQL\\Chad_GPT_Data_Access\\Chad_GPT_Data_Access.csproj",
-      "packagesPath": "C:\\Users\\CGess\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CGess\\source\\repos\\Chad_GPT_SQL\\Chad_GPT_Data_Access\\obj\\",
+      "projectPath": "C:\\Users\\Chad\\source\\repos\\Chad_GPT_SQL\\Chad_GPT_SQL\\Chad_GPT_Data_Access\\Chad_GPT_Data_Access.csproj",
+      "packagesPath": "C:\\Users\\Chad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Chad\\source\\repos\\Chad_GPT_SQL\\Chad_GPT_SQL\\Chad_GPT_Data_Access\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CGess\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Chad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -761,7 +761,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

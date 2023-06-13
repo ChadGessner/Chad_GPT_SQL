@@ -1,21 +1,39 @@
-﻿@model QuestionAnswer
+﻿@model string
 
-<div class="alert-danger p-4 rounded-3">
+<form method="post" class="alert-danger p-4 rounded-3">
+    <select id="categories"></select>
     <div class="card bg-primary rounded-3">
         <div class="card-body m-4 col bg-success rounded-3">
             <textarea  id="myTextArea" ></textarea>
         </div>
         <div class="btn-group">
             <button class="btn btn-dark m-4">Submit Prompt</button>
-            <button class="btn btn-success m-4">Submit Answer</button>
+            <button 
+                type="submit" 
+                asp-action="AddAnswer" 
+                class="btn btn-success m-4">Submit Answer</button>
             <button class="btn btn-danger m-4">Clear Text</button>
         </div>
         
     </div>
-</div>
+</form>
 
 @section Scripts {
     <script>
+        let categories = document.getElementById("categories");
+        const url = 'https://localhost:7119/Category';
+        fetch(url).then((response)=>{
+            return response.json();
+        }).then((json)=>{
+            const categoryArray = [...json];
+            categoryArray.forEach((x)=>{
+                console.log(x.categoryName);
+                const option = document.createElement('option');
+                option.innerText = x.categoryName;
+                option.value = x.id;
+                categories.appendChild(option);
+            })
+        })
         tinymce.init({
             selector: '#myTextArea'
         });

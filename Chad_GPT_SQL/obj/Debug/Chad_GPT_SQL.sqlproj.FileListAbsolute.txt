@@ -4,3 +4,9 @@ C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\bin\Debug\Chad_GPT_SQL.pdb
 C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\obj\Debug\Chad_GPT_SQL.sqlproj.AssemblyReference.cache
 C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\obj\Debug\Chad_GPT_SQL.dll
 C:\Users\CGess\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\obj\Debug\Chad_GPT_SQL.pdb
+C:\Users\Chad\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\Chad_GPT_SQL\bin\Debug\Chad_GPT_SQL.dacpac
+C:\Users\Chad\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\Chad_GPT_SQL\bin\Debug\Chad_GPT_SQL.dll
+C:\Users\Chad\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\Chad_GPT_SQL\bin\Debug\Chad_GPT_SQL.pdb
+C:\Users\Chad\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\Chad_GPT_SQL\obj\Debug\Chad_GPT_SQL.sqlproj.AssemblyReference.cache
+C:\Users\Chad\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\Chad_GPT_SQL\obj\Debug\Chad_GPT_SQL.dll
+C:\Users\Chad\source\repos\Chad_GPT_SQL\Chad_GPT_SQL\Chad_GPT_SQL\obj\Debug\Chad_GPT_SQL.pdb

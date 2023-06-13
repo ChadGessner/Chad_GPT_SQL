@@ -35,5 +35,11 @@ namespace Chad_GPT_SQL_MVC.Controllers
                     Type = int.Parse(collection["type"])});
             return RedirectToAction(nameof(Index));
         }
+        #region for api endpoints
+        [HttpGet]
+        public async Task<IEnumerable<Category>> GetCategoriesAsync() => await _db.GetCategories();
+        
+
+        #endregion
     }
 }

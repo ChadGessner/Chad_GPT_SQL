@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "Chad_GPT_SQL"
 :setvar DefaultFilePrefix "Chad_GPT_SQL"
-:setvar DefaultDataPath "C:\Users\CGess\AppData\Local\Microsoft\VisualStudio\SSDT\Chad_GPT_SQL"
-:setvar DefaultLogPath "C:\Users\CGess\AppData\Local\Microsoft\VisualStudio\SSDT\Chad_GPT_SQL"
+:setvar DefaultDataPath "C:\Users\Chad\AppData\Local\Microsoft\VisualStudio\SSDT\Chad_GPT_SQL"
+:setvar DefaultLogPath "C:\Users\Chad\AppData\Local\Microsoft\VisualStudio\SSDT\Chad_GPT_SQL"
 
 GO
 :on error exit
